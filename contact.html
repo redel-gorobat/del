@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Redel Gorobat</title>
+    <link rel="stylesheet" href="styles3.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">RG</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Me</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="certificates.html" class="nav-link">Certificates</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page-main">
+        <div class="page-header">
+            <div class="container">
+                <h1 class="page-title">Contact Me</h1>
+                <p class="page-subtitle">Let's work together</p>
+            </div>
+        </div>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Information -->
+                    <div class="contact-info" data-aos="fade-right">
+                        <h2>Get In Touch</h2>
+                        <p class="contact-intro">
+                            I'm always open to discussing new projects, creative ideas, 
+                            or opportunities to be part of your visions.
+                        </p>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">📧</div>
+                                <div class="contact-text">
+                                    <h4>Email</h4>
+                                    <a href="mailto:redelgorobat@gmail.com">redelgorobat@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">📱</div>
+                                <div class="contact-text">
+                                    <h4>Phone</h4>
+                                    <a href="tel:+639630871724">+63 963 087 1724</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">📍</div>
+                                <div class="contact-text">
+                                    <h4>Location</h4>
+                                    <p>Labo, Camarines Norte, 4604</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <h3>Connect With Me</h3>
+                            <div class="social-buttons">
+                                <a href="https://www.facebook.com/starboi.del/" class="social-btn facebook">
+                                    <span>Facebook</span>
+                                </a>
+                                <a href="https://www.instagram.com/starboi.del/?hl=en" class="social-btn instagram">
+                                    <span>Instagram</span>
+                                </a>
+                                <a href="@starboidel" class="social-btn telegram">
+                                    <span>Telegram</span>
+                                </a>
+                                <a href="#" class="social-btn discord">
+                                    <span>Discord</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="availability">
+                            <h4>Availability</h4>
+                            <p>Open for freelance projects and collaborations</p>
+                            <div class="status-indicator">
+                                <span class="status-dot"></span>
+                                <span>Available for work</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-container" data-aos="fade-left">
+                        <div class="form-card">
+                            <h3>Send Me a Message</h3>
+                            <form id="contact-form" class="contact-form">
+                                <div class="form-group">
+                                    <label for="name">Full Name</label>
+                                    <input 
+                                        type="text" 
+                                        id="name" 
+                                        name="name" 
+                                        placeholder="Your name" 
+                                        required
+                                    >
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input 
+                                        type="email" 
+                                        id="email" 
+                                        name="email" 
+                                        placeholder="your.email@example.com" 
+                                        required
+                                    >
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="subject">Subject</label>
+                                    <input 
+                                        type="text" 
+                                        id="subject" 
+                                        name="subject" 
+                                        placeholder="What's this about?" 
+                                        required
+                                    >
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea 
+                                        id="message" 
+                                        name="message" 
+                                        rows="6" 
+                                        placeholder="Tell me about your project or inquiry..." 
+                                        required
+                                    ></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-submit">
+                                    Send Message
+                                    <span class="btn-arrow">→</span>
+                                </button>
+                            </form>
+
+                            <div id="form-message" class="form-message"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Redel Gorobat. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="mailto:redelgorobat@gmail.com">Email</a>
+                <a href="tel:+639630871724">Phone</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script1.js"></script>
+</body>
+</html>

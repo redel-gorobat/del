@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Redel Gorobat</title>
+    <link rel="stylesheet" href="styles3.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">RG</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Me</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="certificates.html" class="nav-link">Certificates</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page-main">
+        <div class="page-header">
+            <div class="container">
+                <h1 class="page-title">Projects</h1>
+                <p class="page-subtitle">Explore my creative work</p>
+            </div>
+        </div>
+
+        <section class="projects-section">
+            <div class="container">
+                <!-- Project Categories -->
+                <div class="project-categories">
+                    <button class="category-btn active" data-category="all">All Projects</button>
+                    <button class="category-btn" data-category="gui-ux">UI/UX Designs</button>
+                    <button class="category-btn" data-category="tshirt">T-shirt Designs</button>
+                    <button class="category-btn" data-category="graphic">Graphic Designs</button>
+                    <button class="category-btn" data-category="logo">Logo Designs</button>
+                </div>
+
+                <!-- Project Folders Grid -->
+                <div class="project-folders" id="project-folders">
+                    <div class="project-folder" data-folder="gui-ux" data-aos="fade-up">
+                        <div class="folder-icon">📱</div>
+                        <h3>UI/UX Designs</h3>
+                        <p class="folder-count">5 Projects</p>
+                        <div class="folder-overlay">
+                            <span>Click to view</span>
+                        </div>
+                    </div>
+
+                    <div class="project-folder" data-folder="tshirt" data-aos="fade-up" data-aos-delay="100">
+                        <div class="folder-icon">👕</div>
+                        <h3>T-shirt Designs</h3>
+                        <p class="folder-count">2 Projects</p>
+                        <div class="folder-overlay">
+                            <span>Click to view</span>
+                        </div>
+                    </div>
+
+                    <div class="project-folder" data-folder="graphic" data-aos="fade-up" data-aos-delay="200">
+                        <div class="folder-icon">🎨</div>
+                        <h3>Graphic Designs</h3>
+                        <p class="folder-count">1 Project</p>
+                        <div class="folder-overlay">
+                            <span>Click to view</span>
+                        </div>
+                    </div>
+
+                    <div class="project-folder" data-folder="logo" data-aos="fade-up" data-aos-delay="300">
+                        <div class="folder-icon">✨</div>
+                        <h3>Logo Designs</h3>
+                        <p class="folder-count">3 Projects</p>
+                        <div class="folder-overlay">
+                            <span>Click to view</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Gallery (Hidden by default) -->
+                <div class="project-gallery" id="project-gallery" style="display: none;">
+                    <div class="gallery-header">
+                        <h2 id="gallery-title">Projects</h2>
+                        <button class="close-gallery" id="close-gallery">
+                            <span>×</span> Close Gallery
+                        </button>
+                    </div>
+
+                    <div class="gallery-grid" id="gallery-grid">
+                        <!-- UI/UX Designs - 5 images -->
+                        <div class="gallery-item" data-category="gui-ux">
+                            <div class="image-placeholder">
+                                <img src="Telepro_GUI.jpg" alt="Telepro Mobile Application">
+                                <div class="placeholder-text">Telepro Mobile Application</div>
+                            </div>
+                            <input type="text" class="image-title-input" placeholder="Telepro Mobile Application">
+                        </div>
+                        <div class="gallery-item" data-category="gui-ux">
+                            <div class="image-placeholder">
+                                <img src="Product_landing_page.jpeg" alt="Camera Canon Website Page">
+                                <div class="placeholder-text">Camera Canon Website Page</div>
+                            </div>
+                            <input type="text" class="image-title-input" placeholder="Camera Canon Website Page">
+                        </div>
+                        <div class="gallery-item" data-category="gui-ux">
+                            <div class="image-placeholder">
+                                <img src="FoodSer_GUI.jpg" alt="FoodSer Mobile Application">
+                                <div class="placeholder-text">FoodSer Mobile Application</div>
+                            </div>
+                            <input type="text" class="image-title-input" placeholder="Foodster Mobile Application">
+                        </div>
+                        <div class="gallery-item" data-category="gui-ux">
+                            <div class="image-placeholder">
+                                <img src="Mutaland_GUI.jpg" alt="Mutaland Mobile Application">
+                                <div class="placeholder-text">Mutaland Mobile Application</div>
+                            </div>
+                            <input type="text" class="image-title-input" placeholder="Mutaland Mobile Application">
+                        </div>
+
+                        <!-- T-shirt Designs - 2 images -->
+                        <div class="gallery-item" data-category="tshirt">
+                            <div class="image-placeholder">
+                                <img src="BlackFox_Tshirt.png" alt="Black Fox Tshirt Design">
+                                <div class="placeholder-text">Black Fox Tshirt Design</div>
+                            </div>
+                            <input type="text" class="image-title-input" placeholder="Black Fox Tshirt Design">
+                        </div>
+                        <div class="gallery-item" data-category="tshirt">
+                            <div class="image-placeholder">
+                                <img src="WhiteWolves_Tshirt.png" alt="White Wolves Tshirt Design">
+                                <div class="placeholder-text">White Wolves Tshirt Design</div>
+                            </div>
+                            <input type="text" class="image-title-input" placeholder="White Wolves Tshirt Design">
+                        </div>
+
+                        <!-- Graphic Designs - 1 image -->
+                        <div class="gallery-item" data-category="graphic">
+                            <div class="image-placeholder">
+                                <img src="Techwear.png" alt="Techwear Poster Design">
+                                <div class="placeholder-text">Techwear Poster Design</div>
+                            </div>
+                            <input type="text" class="image-title-input" placeholder="Techwear Poster Design">
+                        </div>
+
+                        <!-- Logo Designs - 3 images -->
+                        <div class="gallery-item" data-category="logo">
+                            <div class="image-placeholder">
+                                <img src="Laufen&Thoral.png" alt="Laufen N' Thoral Logo Design">
+                                <div class="placeholder-text">Laufen N' Thoral Logo Design</div>
+                            </div>
+                            <input type="text" class="image-title-input" placeholder="Laufen N' Thoral Logo Design">
+                        </div>
+                        <div class="gallery-item" data-category="logo">
+                            <div class="image-placeholder">
+                                <img src="Luna.png" alt="Luna Logo Design">
+                                <div class="placeholder-text">Luna Logo Design</div>
+                            </div>
+                            <input type="text" class="image-title-input" placeholder="Luna Logo Design">
+                        </div>
+                        <div class="gallery-item" data-category="logo">
+                            <div class="image-placeholder">
+                                <img src="Renz&CO.png" alt="Renz & Co. Logo Design">
+                                <div class="placeholder-text">Renz & Co. Logo Design</div>
+                            </div>
+                            <input type="text" class="image-title-input" placeholder="Renz & Co. Logo Design">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Redel Gorobat. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="mailto:redelgorobat@gmail.com">Email</a>
+                <a href="tel:+639630871724">Phone</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script1.js"></script>
+</body>
+</html>
